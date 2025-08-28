@@ -14,7 +14,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
         const data = await res.json();
         // Assuming API returns an array of objects
         const ios = data.find((item) => item.label === "IOS DOWNLOAD");
-        const aos = data.find((item) => item.label === "AOS DOWNLOAD");
+        const aos = data.find((item) => item.label === "ANDROID DOWNLOAD");
         setDownloadLinks({ ios, aos });
       } catch (err) {
         // fallback: do nothing or set default links
