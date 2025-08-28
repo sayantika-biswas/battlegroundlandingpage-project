@@ -10,7 +10,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
   useEffect(() => {
     async function fetchLinks() {
       try {
-        const res = await fetch("https://backend-landingpage-zs9q.onrender.com/api/navbar");
+        const res = await fetch("https://battlegroundbackend-project.onrender.com/api/navbar");
         const data = await res.json();
         // Assuming API returns an array of objects
         const ios = data.find((item) => item.label === "IOS DOWNLOAD");

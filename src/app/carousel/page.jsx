@@ -62,7 +62,7 @@ export default function Carousel() {
 
   useEffect(() => {
     // Fetch reviews from backend API
-    fetch('https://backend-landingpage-zs9q.onrender.com/api/reviews')
+    fetch('https://battlegroundbackend-project.onrender.com/api/reviews')
       .then(res => res.json())
       .then(data => setReviews(data))
       .catch(() => setReviews([]));

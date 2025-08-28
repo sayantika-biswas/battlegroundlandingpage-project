@@ -18,7 +18,7 @@ export default function Footer() {
     useEffect(() => {
       async function fetchSocialLinks() {
         try {
-          const res = await fetch("https://backend-landingpage-zs9q.onrender.com/api/social-links");
+          const res = await fetch("https://battlegroundbackend-project.onrender.com/api/social-links");
           const data = await res.json();
           const instagram = data.find((item) => item.type === "instagram");
           const facebook = data.find((item) => item.type === "facebook");
@@ -35,7 +35,7 @@ export default function Footer() {
   useEffect(() => {
     async function fetchLinks() {
       try {
-        const res = await fetch("https://backend-landingpage-zs9q.onrender.com/api/store-links");
+        const res = await fetch("https://battlegroundbackend-project.onrender.com/api/store-links");
         const data = await res.json();
         const apple = data.find((item) => item.type === "apple");
         const google = data.find((item) => item.type === "google");

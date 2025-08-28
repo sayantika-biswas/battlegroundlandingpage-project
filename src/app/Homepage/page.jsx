@@ -11,7 +11,7 @@ import Link from "next/link";
   useEffect(() => {
     async function fetchLinks() {
       try {
-        const res = await fetch("https://backend-landingpage-zs9q.onrender.com/api/store-links");
+        const res = await fetch("https://battlegroundbackend-project.onrender.com/api/store-links");
         const data = await res.json();
         const apple = data.find((item) => item.type === "apple");
         const google = data.find((item) => item.type === "google");
@@ -27,7 +27,7 @@ import Link from "next/link";
   useEffect(() => {
     async function fetchBgImages() {
       try {
-        const res = await fetch("https://backend-landingpage-zs9q.onrender.com/api/bgcarousel");
+        const res = await fetch("https://battlegroundbackend-project.onrender.com/api/bgcarousel");
         const data = await res.json();
         console.log({data})
         // If API returns array of objects with url property
